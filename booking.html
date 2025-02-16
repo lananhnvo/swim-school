@@ -12,19 +12,19 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="index.html">LOGO</a>
+            <a class="navbar-brand" href="index.html">Splish Splash Swim Schools</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="levels.html">Levels</a></li>
-                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="location.html">Locations</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="levels.html">Levels</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">Book Now</a></li>
                 </ul>
-                <button class="btn btn-outline-light login-btn ms-3">LOGIN</button>
+                <button class="btn btn-outline-light login-btn ms-3" onclick="openLoginModal()">LOGIN</button>
             </div>
         </div>
     </nav>
@@ -34,15 +34,15 @@
         <h2 class="text-center text-primary">Booking Page</h2>
         
         <div class="row mt-4 justify-content-center">
-            <div class="col-md-8">
-                <div class="booking-container d-flex p-4">
+            <div class="col-lg-8 col-md-10 col-sm-12">
+                <div class="booking-container d-flex flex-column flex-md-row p-4 align-items-center">
                     <!-- Embedded Calendar -->
-                    <div class="calendar-container">
-                        <iframe src="https://calendar.google.com/calendar/embed?src=your_calendar_link" frameborder="0"></iframe>
+                    <div class="calendar-container mb-3 mb-md-0 me-md-4 w-100 w-md-50">
+                        <iframe class="w-100" src="https://calendar.google.com/calendar/embed?src=your_calendar_link" frameborder="0"></iframe>
                     </div>
                     
                     <!-- Booking Details -->
-                    <div class="booking-details ms-4">
+                    <div class="booking-details text-center text-md-start w-100 w-md-50">
                         <h4 class="text-white"><strong>Reserve your tour now!</strong></h4>
                         <p class="text-white">Date:</p>
                         <p class="text-white">Time:</p>
@@ -52,9 +52,11 @@
                 </div>
             </div>
         </div>
+        <button type="submit" class="btn btn-primary w-100" onclick="saveBookingDetails()">BOOK NOW</button>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
 
 </body>
 </html>

@@ -18,7 +18,9 @@
     padding: 5px 15px;
 }
 .hero {
-    background-color: #D3D3D3;
+    position: relative;
+    background: url('swim_underwater.jpg') no-repeat center center/cover;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,6 +28,19 @@
     text-align: center;
     height: 100vh;
     padding: 100px 20px;
+    color: white;
+    z-index: 1;
+}
+/* Overlay for opacity */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* Adjust opacity (0.5 = 50%) */
+    z-index: -1;
 }
 .hero h1 {
     font-size: 3rem;
@@ -43,6 +58,9 @@
 .cta-btn:hover {
     background-color: #1E3D5B;
     color: white;
+}
+.h2 {
+    color: #1E486F !important;
 }
 /*LEVELS*/
 .level-card {
@@ -104,4 +122,93 @@
 
 .text-white {
     color: white;
+}
+
+/*CONFIRMATION*/
+.confirmation-box {
+    background-color: #2D5B87; /* Blue background */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+}
+
+/*PROFILE*/
+.info-card {
+    background-color: #2D5B87; /* Blue background */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.info-card h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/*LOCATION*/
+.search-box {
+    background-color: #2D5B87; /* Blue Background */
+    border-radius: 5px;
+}
+
+.search-box input {
+    border-radius: 5px;
+}
+
+.location-list {
+    background-color: #2D5B87;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.location-item {
+    background-color: #6F8AA7;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    background-color: #2D5B87; /* Blue background */
+    border-radius: 5px;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 5px;
+}
+
+/*CONTACT*/
+.contact-box {
+    background-color: #2D5B87;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-box input,
+.contact-box select,
+.contact-box textarea {
+    border-radius: 5px;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 100px;
+    background-color: #6F8AA7;
+    color: white;
+    border-radius: 5px;
 }

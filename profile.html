@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Splish Splash Swim Schools</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="location.html">Locations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="levels.html">Levels</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">Book Now</a></li>
+                </ul>
+                <button class="btn btn-outline-light login-btn ms-3" onclick="openLoginModal()">LOGIN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Client Information Section -->
+    <section class="container mt-5">
+        <h2 class="text-primary text-left">Client Information</h2>
+        
+        <div class="row mt-4">
+            <!-- Your Information -->
+            <div class="col-md-6">
+                <div class="info-card">
+                    <h4><strong>Your information</strong></h4>
+                    <p>First Name:</p>
+                    <p>Last Name:</p>
+                    <p>Email:</p>
+                    <p>Card on file:</p>
+                </div>
+            </div>
+
+            <!-- Swimmer's Information -->
+            <div class="col-md-6">
+                <div class="info-card">
+                    <h4><strong>Your swimmer’s information</strong></h4>
+                    <p>First Name:</p>
+                    <p>Last Name:</p>
+                    <p>Level:</p>
+                    <p>Instructor:</p>
+                    <p>Date/class time:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+
+</body>
+</html>
